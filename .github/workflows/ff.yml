@@ -1,0 +1,24 @@
+name: ForexFactory calendar
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  ff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download calendar
+        run: |
+          curl -fsSL -A "Mozilla/5.0 TradingJournal" https://nfs.faireconomy.media/ff_calendar_thisweek.json -o ff.tmp || exit 0
+          if head -c 1 ff.tmp | grep -q '\['; then mv ff.tmp ff.json; else rm -f ff.tmp; fi
+      - name: Commit if changed
+        run: |
+          git config user.name "ff-bot"
+          git config user.email "ff-bot@users.noreply.github.com"
+          git add ff.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "ForexFactory calendar update"
+          git push
