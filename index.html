@@ -1364,6 +1364,36 @@ button[data-pd]{-webkit-touch-callout:none;user-select:none}
 .syed img{max-width:100%;height:auto;border-radius:10px;margin:6px 0;display:block}
 .syed blockquote{border-left:3px solid var(--bd);margin:12px 0;padding:10px 14px;border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--tx) 3%,transparent)}
 .syed blockquote div{margin:4px 0}
+
+.sygr .sygr{border-top:0;padding:4px 0 2px}.sysub>.syghd{padding-left:calc(var(--lv)*14px)}.sysub>.sygbody{padding-left:calc(var(--lv)*14px)}
+.sysub>.syghd .sygn{text-transform:none;letter-spacing:.02em;font-size:12px;font-weight:600;color:color-mix(in srgb,var(--tx) 75%,transparent)}
+.sygr.syfold>.sygbody{display:none}
+.syghd{border-radius:9px;transition:background .12s}.syghd.sydov{background:color-mix(in srgb,var(--p,#c6f366) 16%,transparent);outline:1px dashed var(--p,#c6f366)}
+.sygb{display:flex;gap:0;opacity:.0;transition:opacity .15s}.syghd:hover .sygb,.syghd:focus-within .sygb{opacity:1}@media(hover:none){.sygb{opacity:1}}
+.syname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px}
+.syren{font:inherit;font-size:12px;padding:3px 8px;border-radius:7px;width:160px;text-transform:none;letter-spacing:0}
+.syhint{font-size:11px!important;margin-top:12px;opacity:.7}
+.sydr[draggable=true]{cursor:pointer}.sydr.dragging{opacity:.5}
+.syloc{display:flex;align-items:center;gap:8px;margin-top:6px;flex-wrap:wrap}.sysel{font-size:12px;padding:4px 26px 4px 10px;border-radius:9px;max-width:100%;min-width:0}.syhint2{font-size:11px!important}
+/* документ: типографика */
+.syed{line-height:1.65}.syed p{margin:6px 0}.syed h2{font-size:20px;margin:26px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--bd)}.syed h2:first-child{margin-top:4px}.syed h3{font-size:16px;margin:18px 0 6px}
+.syed h2+hr,.syed h3+hr{display:none}.syed hr{border:0;border-top:1px solid var(--bd);margin:12px 0}
+.syed blockquote{border:1px solid var(--bd);border-left:3px solid color-mix(in srgb,var(--p,#c6f366) 55%,transparent);margin:14px 0;padding:12px 16px;border-radius:12px;background:color-mix(in srgb,var(--tx) 3.5%,transparent)}
+.syed blockquote blockquote{border-left-width:1px}.syed ul,.syed ol{padding-left:22px;margin:6px 0}.syed li{margin:3px 0}
+/* галереи скринов */
+.syed [data-g]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0;align-items:start;position:relative}
+.syed [data-g]:has(>img:nth-child(3):last-child),.syed [data-g]:has(>img:nth-child(5)){grid-template-columns:repeat(3,minmax(0,1fr))}
+.syed [data-g] img{width:100%;height:auto;margin:0!important;border-radius:10px;cursor:zoom-in;display:block;background:#fff}
+.syed [data-g="b"]{grid-template-columns:repeat(4,minmax(0,1fr))!important}.syed [data-g="b"]>img:first-child{grid-column:1/-1}
+.syed [data-g="b"]>img:not(:first-child){aspect-ratio:16/10;object-fit:cover;opacity:.62;cursor:pointer;transition:opacity .15s}.syed [data-g="b"]>img:not(:first-child):hover{opacity:1;outline:2px solid var(--p,#c6f366)}
+.syed img{cursor:zoom-in}
+#sygt{position:fixed;z-index:60;display:none}
+@media(max-width:600px){.syed [data-g],.syed [data-g]:has(>img:nth-child(3):last-child),.syed [data-g]:has(>img:nth-child(5)){grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* плавающая панель */
+#sybub{position:fixed;z-index:80;display:none;align-items:center;gap:1px;padding:4px;border-radius:12px;background:rgba(22,23,27,.96);border:1px solid rgba(255,255,255,.12);box-shadow:0 12px 34px rgba(0,0,0,.45);backdrop-filter:blur(12px)}
+#sybub.on{display:flex}#sybub button{background:none;border:0;color:#e8e8ec;min-width:30px;height:30px;padding:0 7px;border-radius:8px;font-size:13px;display:grid;place-items:center;cursor:pointer}#sybub button:hover{background:rgba(255,255,255,.12)}
+.sybs{width:1px;height:18px;background:rgba(255,255,255,.14);margin:0 3px}.sybc{display:block;width:14px;height:14px;border-radius:50%;font-style:normal}
+@media(max-width:600px){#sybub{max-width:calc(100vw - 16px);overflow-x:auto}}
 </style><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 </head><body>
 <aside id='side'><div class='sdb' data-v='dash' onclick='go(this.dataset.v)'><b>TRADING</b> Journal</div><button class='sdadd' onclick='openPos()'>+ Добавить позицию</button><div class='sdl'>АНАЛИТИКА</div><button class='sdi' data-s='dash' onclick="go('dash')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M4 15a8 8 0 1 1 16 0'/><path d='m12 15 4-4'/></svg><span>Дашборд</span></button><button class='sdi' data-s='pos' onclick="go('pos')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M4 6h16M4 12h16M4 18h10'/></svg><span>Журнал</span></button><button class='sdi' data-s='rev' onclick="go('rev')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M4 20V10M10 20V4M16 20v-7M22 20H2'/></svg><span>Перформанс</span></button><div class='sdsep'></div><div class='sdl'>ЗАПИСИ</div><button class='sdi' data-s='plans' onclick="go('plans')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><circle cx='12' cy='12' r='5'/><circle cx='12' cy='12' r='1.5'/></svg><span>Торговые планы</span></button><button class='sdi' data-s='sys' onclick="go('sys')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='m12 3 9 5-9 5-9-5z'/><path d='m3 13 9 5 9-5'/></svg><span>Торговая система</span></button><button class='sdi' data-s='notes' onclick="go('notes')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z'/><path d='M14 3v5h5M9 13h6M9 17h4'/></svg><span>Заметки</span></button><button class='sdi' data-s='errs' onclick="go('errs')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3.5 21.5 20h-19z'/><path d='M12 10v4.5M12 17.5v.01'/></svg><span>Ошибки</span></button><div class='sdsep'></div><div class='sdl'>НАСТРОЙКИ</div><button class='sdi' data-s='acc' onclick="stab='acc';go('set')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='6' width='18' height='13' rx='2'/><path d='M3 10h18M16 15h2'/></svg><span>Аккаунты</span></button><button class='sdi' data-s='set' onclick="stab=stab==='acc'?'pairs':stab;go('set')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='3'/><path d='M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z'/></svg><span>Настройки</span></button><div class='sdsep'></div></aside><div class='top' data-v='dash' onclick='go(this.dataset.v)'><b>TRADING</b> Journal</div><div class="w">
@@ -2809,7 +2839,7 @@ async function clPush(){if(!CL.on)return;if(CL.busy){CL.again=true;return}CL.bus
  try{const n=await clImgs();const cur=clRows(S),ts=Date.now(),ups=[],dels=[];
   for(const k in cur){const j=clJ(cur[k]);if(clJ(CL.base[k])!==j)ups.push({k,v:JSON.parse(j),ts})}
   for(const k in CL.base)if(!(k in cur))dels.push(k);
-  for(let i=0;i<ups.length;i+=200){const {error}=await CL.sb.from('tj').upsert(ups.slice(i,i+200),{onConflict:'user_id,k'});if(error)throw error}
+  {let b=[],sz=0;const fl=async()=>{if(!b.length)return;const {error}=await CL.sb.from('tj').upsert(b,{onConflict:'user_id,k'});if(error)throw error;b=[];sz=0};for(const r of ups){const l=JSON.stringify(r.v).length;if(b.length&&(sz+l>400000||b.length>=200))await fl();b.push(r);sz+=l}await fl()}
   for(let i=0;i<dels.length;i+=200){const {error}=await CL.sb.from('tj').delete().in('k',dels.slice(i,i+200));if(error)throw error}
   ups.forEach(r=>{CL.mir[r.k]=r.v;CL.base[r.k]=r.v});dels.forEach(k=>{delete CL.mir[k];delete CL.base[k]});
   if(n){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
@@ -3234,7 +3264,7 @@ function rvAny(k){const R2=S.reviews||{};return!!R2[k]||Object.keys(R2).some(x=>
 function rvPairSw(v){if(rvEd&&pd&&pd.rv===2){try{document.querySelectorAll('.rved').forEach(rvIn)}catch(e){}try{AS.stop();rvSave(true)}catch(e){}try{AS.reset()}catch(e){}rvPair=v;rvStart()}else{rvPair=v;R()}}
 function rvPairProg(L){if(!L.length)return'';const R2=S.reviews||{};const done=L.filter(x=>R2[rvKey+'@'+x]).length;return`<span class='rvpp2'>${L.map(x=>`<button type='button' class='${R2[rvKey+'@'+x]?'ok':''}${rvPair===x?' on':''}' data-p='${E(x)}' onclick='rvPairSw(this.dataset.p)' title='${R2[rvKey+'@'+x]?'Разбор есть':'Разбора нет'}'>${R2[rvKey+'@'+x]?'✓':'○'} ${E(x)}</button>`).join('')}<em>${done}/${L.length}</em></span>`}
 
-// ===== Daily plans analytics in period review (v220)
+// ===== Daily plans analytics in period review (v222)
 var rvPU='w',rvDO=null;
 function rvPUseg(){return`<span class='rvseg rvpu'><button type='button' class='${rvPU==='w'?'on':''}' onclick='rvPU="w";rvKeep()'>Недельные</button><button type='button' class='${rvPU==='d'?'on':''}' onclick='rvPU="d";rvKeep()'>Дневные</button></span>`}
 function rvDTr(x,d,C){return C.filter(q=>q.date===d&&((q.planRef&&q.planRef.pid===x.id&&(!q.planRef.day||q.planRef.day===d))||(!q.planRef&&q.pair===x.pair)))}
@@ -3279,13 +3309,72 @@ async function niRun(){if(NI.busy)return;NI.busy=true;const o=NI.data,keys=Objec
   niBox(`<b style='font-size:16px'>Готово</b><div class='sm' style='margin:10px 0 14px;line-height:1.6'>Новых документов: <b>${nd}</b>${nu?` · обновлено: <b>${nu}</b>`:''}${cl?` · скринов: <b>${keys.length-fail}</b>`:''}${fail?`<br><span style="color:var(--r)">Не загрузились скрины: ${fail}. Повтори импорт — догрузятся только они.</span>`:''}${cl?'':'<br>Скрины не добавлены — нужен вход в облако.'}</div><div style='display:flex;justify-content:flex-end'><button class='pfsave' style='flex:none;padding:10px 22px' onclick='niClose()'>Открыть</button></div>`);
   sysTab='doc';if(view!=='sys')go('sys');else R()}
  catch(e){NI.busy=false;niBox(`<b>Импорт прерван</b><div class='sm' style='margin:10px 0 14px'>${E(String(e&&e.message||e))}</div><div style='display:flex;justify-content:flex-end'><button class='nb' onclick='niClose()'>Закрыть</button></div>`)}}
-/* сворачивание групп в списке документов */
+/* Доктрина: каждый документ — отдельная запись в облаке (большие документы не помещались в одну запись) */
+{const _r=clRows;clRows=function(src){const o=_r(src);const y=o.sys;if(y&&typeof y==='object'&&Array.isArray(y.docs)){const docs=y.docs;o.sys={...y};delete o.sys.docs;CL.coll.add('sysdoc');o['sysdoc#__order']=docs.map(x=>String(x.id));docs.forEach(x=>{o['sysdoc#'+x.id]=x})}return o}}
+{const _b=clBuild;clBuild=function(M){const R2=_b(M);if(Array.isArray(R2.sysdoc)){R2.sys=R2.sys&&typeof R2.sys==='object'?R2.sys:{};if(R2.sysdoc.length||!Array.isArray(R2.sys.docs))R2.sys.docs=R2.sysdoc;delete R2.sysdoc}return R2}}
+
+/* ===== Доктрина v2: подгруппы, галереи скринов, лайтбокс, плавающая панель форматирования ===== */
+var SYREN=null;
+function syKids(pid){return SY().groups.filter(g=>(g.pid||null)===pid)}
+function syCnt(gid){const y=SY();return y.docs.filter(d=>d.gid===gid).length+syKids(gid).reduce((a,g)=>a+syCnt(g.id),0)}
+function syAnc(gid){const y=SY(),out=[];let g=y.groups.find(x=>x.id===gid),n=0;while(g&&n++<30){out.push(g.id);g=g.pid?y.groups.find(x=>x.id===g.pid):null}return out}
 function syFold(id){const y=SY();y.fold=y.fold||{};y.fold[id]=!y.fold[id];save();R()}
-{const _d=sysDoc;sysDoc=function(){let h=_d();const y=SY();y.fold=y.fold||{};
- h=h.replace(/(<div class='c in sydocs'>[\s\S]*?<div style='display:flex;gap:8px;margin:16px 0 12px'>)([\s\S]*?)(<\/div>)/,(m,a,b,c)=>a+b+`<button class='nb' style='padding:8px 12px;white-space:nowrap' title='Импорт торговой системы из Notion' onclick='niPick()'>⇪ Импорт</button>`+c);
- y.groups.forEach(g=>{const n=y.docs.filter(x=>x.gid===g.id).length,op=!y.fold[g.id]||y.docs.some(x=>x.id===y.cur&&x.gid===g.id);
-  h=h.replace(`<span class='sygn'>${E(g.name)}</span>`,`<span class='sygn syfb' onclick='syFold(${g.id})'><i class='syfc${op?' op':''}'>›</i>${E(g.name)}<em class='sycnt2 mono'>${n}</em></span>`);
- });
- return h}}
-{const _R=R;R=function(){_R();if(view==='sys'&&sysTab==='doc'){const y=SY();y.fold=y.fold||{};document.querySelectorAll('.sygr').forEach(gr=>{const b=gr.querySelector('.syfb');if(!b)return;const m=(b.getAttribute('onclick')||'').match(/\d+/);if(!m)return;const id=+m[0],op=!y.fold[id]||y.docs.some(x=>x.id===y.cur&&x.gid===id);gr.classList.toggle('syfold',!op)})}}}
+function syAddSub(pid){const y=SY(),id=Date.now();y.groups.push({id,name:'Новая подгруппа',pid});y.fold=y.fold||{};y.fold[pid]=false;y.fold[id]=false;SYREN=id;save();R()}
+function syRen(id){SYREN=id;R()}
+function syRenOk(id,v){if(SYREN!==id)return;SYREN=null;const g=SY().groups.find(x=>x.id===id);v=(v||'').trim();if(g&&v)g.name=v;save();R()}
+function syMove(gid){const d=sysCur();if(!d)return;d.gid=gid||null;d.upd=Date.now();save();R();toast('Документ перемещён')}
+var SYDG=null;function syDrag(ev,id){SYDG=id;try{ev.dataTransfer.setData('text/plain',String(id));ev.dataTransfer.effectAllowed='move'}catch(e){}}
+function syOver(ev){if(SYDG==null)return;ev.preventDefault();ev.currentTarget.classList.add('sydov')}
+function syLeave(ev){ev.currentTarget.classList.remove('sydov')}
+function syDrop(ev,gid){ev.preventDefault();ev.currentTarget.classList.remove('sydov');const d=SY().docs.find(x=>x.id===SYDG);SYDG=null;if(d){d.gid=gid;d.upd=Date.now();const y=SY();y.fold=y.fold||{};if(gid)syAnc(gid).forEach(a=>y.fold[a]=false);save();R()}}
+sysDelGrp=function(id){const y=SY();if(!confirmDel('sg'+id))return;const g=y.groups.find(x=>x.id===id),p=g&&g.pid||null;y.docs.forEach(x=>{if(x.gid===id)x.gid=p});y.groups.forEach(x=>{if(x.pid===id)x.pid=p});y.groups=y.groups.filter(x=>x.id!==id);save();R()};
+function syOpts(sel){const out=[`<option value=''${sel==null?' selected':''}>Без группы</option>`];const w=(pid,lv)=>syKids(pid).forEach(g=>{out.push(`<option value='${g.id}'${g.id===sel?' selected':''}>${'   '.repeat(lv)}${lv?'└ ':''}${E(g.name)}</option>`);w(g.id,lv+1)});w(null,0);return out.join('')}
+function syTree(){const y=SY();y.fold=y.fold||{};
+ const docRow=x=>`<div class='sydr${x.id===y.cur?' on':''}' draggable='true' ondragstart='syDrag(event,${x.id})' onclick='SY().cur=${x.id};save();R()'><span class='mu' style='display:inline-flex'>${SYI.doc}</span><span class='sydt' id='sydt_${x.id}'>${E(x.title||'Без названия')}</span><button class='sib del' aria-label='Удалить документ' onclick='event.stopPropagation();sysDelDoc(${x.id})'>${IC.bin}</button></div>`;
+ const grp=(g,lv)=>{const open=!y.fold[g.id],docs=y.docs.filter(d=>d.gid===g.id),kids=syKids(g.id);
+  const nm=SYREN===g.id?`<input class='syren' value='${E(g.name)}' onclick='event.stopPropagation()' onkeydown='if(event.key==="Enter")syRenOk(${g.id},this.value);if(event.key==="Escape"){SYREN=null;R()}' onblur='syRenOk(${g.id},this.value)'>`:`<span class='syname'>${E(g.name)}</span>`;
+  return`<div class='sygr${open?'':' syfold'}${lv?' sysub':''}' style='--lv:${lv}'><div class='row syghd' ondragover='syOver(event)' ondragleave='syLeave(event)' ondrop='syDrop(event,${g.id})'><span class='sygn syfb' onclick='syFold(${g.id})' ondblclick='event.stopPropagation();syRen(${g.id})'><i class='syfc${open?' op':''}'>›</i>${nm}<em class='sycnt2 mono'>${syCnt(g.id)}</em></span><span class='sygb'><button class='sib' title='Новый документ' aria-label='Новый документ' onclick='sysAddDoc(${g.id})'>+</button><button class='sib' title='Подгруппа' aria-label='Новая подгруппа' onclick='syAddSub(${g.id})'>${SYI.fadd}</button><button class='sib' title='Переименовать' aria-label='Переименовать группу' onclick='syRen(${g.id})'>✎</button><button class='sib del' title='Удалить группу' aria-label='Удалить группу' onclick='sysDelGrp(${g.id})'>${IC.bin}</button></span></div><div class='sygbody'>${docs.map(docRow).join('')}${kids.map(k=>grp(k,lv+1)).join('')}${!docs.length&&!kids.length?`<div class='sm' style='font-size:12px;padding:4px 2px'>Пусто — нажми + или перетащи сюда документ</div>`:''}</div></div>`};
+ const free=y.docs.filter(d=>!d.gid||!y.groups.some(g=>g.id===d.gid));
+ return`<div class='c in sydocs'><div style='display:flex;gap:14px;align-items:flex-start'><span class='syic g2'>${SYI.fold}</span><div style='flex:1'><b style='font-size:15px'>Документы</b><div class='sm' style='font-size:12px;margin-top:2px'>Группы, подгруппы и страницы твоей системы</div></div><span class='sycnt mono'>${y.docs.length}</span></div>
+<div style='display:flex;gap:8px;margin:16px 0 12px'><input id='sygi' class='sin' placeholder='Новая группа' onkeydown='if(event.key==="Enter")sysAddGrp()'><button class='nb' style='padding:8px 14px' aria-label='Создать группу' onclick='sysAddGrp()'>${SYI.fadd}</button><button class='nb' style='padding:8px 12px;white-space:nowrap' title='Импорт торговой системы из Notion' onclick='niPick()'>⇪ Импорт</button></div>
+${syKids(null).map(g=>grp(g,0)).join('')}<div class='sygr'><div class='row syghd' ondragover='syOver(event)' ondragleave='syLeave(event)' ondrop='syDrop(event,null)'><span class='sygn'>Без группы</span><span class='sygb'><button class='sib' aria-label='Новый документ' onclick='sysAddDoc(null)'>+</button></span></div><div class='sygbody'>${free.map(docRow).join('')}</div></div>${y.docs.length?'':`<div class='sm' style='font-size:12px;margin-top:6px'>Документов пока нет. Добавь группу или документ.</div>`}<div class='sm syhint'>Двойной клик по группе — переименовать · перетащи документ на группу, чтобы переместить</div></div>`}
+{const _d=sysDoc;sysDoc=function(){const h=_d(),i=h.indexOf("<div class='c in sydocs'>");if(i<0)return h;let out=h.slice(0,i)+syTree()+'</div>';const d=sysCur();
+ if(d)out=out.replace("<div class='sm' style='font-size:12px;margin-top:2px'>Пиши систему как документ. Выдели строку и нажми «☑ Правило» — она станет правилом, которое можно отмечать.</div>",`<div class='syloc'><span class='mu' style='display:inline-flex'>${SYI.fold}</span><select class='sysel' aria-label='Группа документа' onchange='syMove(this.value?+this.value:null)'>${syOpts(d.gid||null)}</select><span class='sm syhint2'>Выдели текст — появится панель форматирования</span></div>`);
+ return out}}
+/* --- галереи: подряд идущие скрины -> одна группа <div data-g> --- */
+function syIsImgEl(n){if(n.nodeType!==1)return false;if(n.tagName==='IMG')return true;if(n.tagName==='DIV'&&n.hasAttribute('data-g'))return true;if(n.tagName!=='P'&&n.tagName!=='DIV')return false;if(n.attributes.length)return false;let im=0;for(const c of n.childNodes){if(c.nodeType===3){if(c.textContent.trim())return false}else if(c.nodeType===1){if(c.tagName==='IMG')im++;else if(c.tagName!=='BR')return false}}return im>0}
+function syGrp(html){const t=document.createElement('template');t.innerHTML=html||'';let ch=false;
+ const proc=box=>{const kids=[...box.childNodes];let run=[];const flush=()=>{const imgs=[];run.forEach(n=>{if(n.tagName==='IMG')imgs.push(n);else imgs.push(...n.querySelectorAll('img'))});
+   if(imgs.length>=2&&!(run.length===1&&run[0].tagName==='DIV'&&run[0].hasAttribute('data-g'))){const lay=(run.find(n=>n.tagName==='DIV'&&n.hasAttribute('data-g'))||{getAttribute:()=> 'a'}).getAttribute('data-g')||'a';const g=document.createElement('div');g.setAttribute('data-g',lay==='b'?'b':'a');imgs.forEach(im=>g.appendChild(im));box.insertBefore(g,run[0]);run.forEach(n=>{if(n.parentNode===box&&n!==g)n.remove()});ch=true}
+   else if(imgs.length<2)run.forEach(n=>{if(n.tagName==='DIV'&&n.hasAttribute('data-g')&&imgs.length===1){box.insertBefore(imgs[0],n);n.remove();ch=true}});run=[]};
+  for(const n of kids){if(n.nodeType===3&&!n.textContent.trim()){continue}if(n.nodeType===1&&n.tagName==='BR'&&run.length){continue}if(syIsImgEl(n))run.push(n);else{flush();if(n.nodeType===1&&!['IMG','TABLE'].includes(n.tagName))proc(n)}}flush()};
+ proc(t.content);return{html:t.innerHTML,ch}}
+{const _s=sanitIt;sanitIt=function(html){const h=String(html||'').replace(/<div data-g="(a|b)"[^>]*>/gi,(m,l)=>'<div>\u0005g'+l+'\u0006');return _s(h).replace(/<div>\u0005g(a|b)\u0006/g,(m,l)=>`<div data-g="${l}">`).replace(/\u0005g(a|b)\u0006/g,'')}}
+{const _i=sysInit;sysInit=function(){const d=sysCur();if(d&&!d.gv){const r=syGrp(d.html||'');d.gv=1;if(r.ch){d.html=sanitIt(r.html);save()}}_i();const e=$('#sysed');if(e&&!e.dataset.g2){e.dataset.g2='1';e.addEventListener('focusout',()=>{setTimeout(()=>{const e2=$('#sysed'),dd=sysCur();if(!e2||!dd||e2.contains(document.activeElement))return;const r=syGrp(e2.innerHTML);if(r.ch){e2.innerHTML=sanitIt(r.html);sysIn()}},50)})}}}
+function syGal(g){return[...g.querySelectorAll('img')]}
+document.addEventListener('click',ev=>{const im=ev.target&&ev.target.closest&&ev.target.closest('#sysed img');if(!im)return;const s=getSelection();if(s&&!s.isCollapsed&&s.toString())return;const g=im.closest('[data-g]');
+ if(g&&g.getAttribute('data-g')==='b'&&g.querySelector('img')!==im){g.insertBefore(im,g.firstChild);sysIn();return}
+ const list=g?syGal(g):[im];ev.preventDefault();lbOpen(list.map(x=>x.src),Math.max(0,list.indexOf(im)))});
+/* переключатель шаблона галереи при наведении */
+function syGtPos(g){let t=$('#sygt');if(!t){t=document.createElement('div');t.id='sygt';t.className='galtg';t.innerHTML=`<button type='button' data-v='a' title='Сетка' aria-label='Шаблон: сетка' onmousedown='event.preventDefault()' onclick='syGtSet("a")'>${GALI.a}</button><button type='button' data-v='b' title='Главный + миниатюры' aria-label='Шаблон: главный + миниатюры' onmousedown='event.preventDefault()' onclick='syGtSet("b")'>${GALI.b}</button>`;document.body.appendChild(t);t.addEventListener('mouseleave',e=>{if(!(e.relatedTarget&&e.relatedTarget.closest&&e.relatedTarget.closest('[data-g]')))t.style.display='none'})}
+ if(!g){t.style.display='none';t._g=null;return}const r=g.getBoundingClientRect();t._g=g;t.style.display='flex';t.style.top=(r.top+8)+'px';t.style.left=(r.left+8)+'px';const v=g.getAttribute('data-g');t.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.v===v))}
+function syGtSet(v){const t=$('#sygt'),g=t&&t._g;if(!g)return;g.setAttribute('data-g',v);sysIn();syGtPos(g)}
+document.addEventListener('mouseover',ev=>{const tg=ev.target;if(!tg||!tg.closest)return;if(tg.closest('#sygt'))return;const g=tg.closest('#sysed [data-g]');syGtPos(g&&g.querySelectorAll('img').length>1?g:null)});
+window.addEventListener('scroll',()=>{const t=$('#sygt');if(t)t.style.display='none'},true);
+/* плавающая панель форматирования при выделении текста */
+var SYBI=[['bold','<b>B</b>','Жирный'],['italic','<i style="font-family:Georgia,serif">I</i>','Курсив'],['underline','<u>U</u>','Подчеркнуть'],['strikeThrough','<s>S</s>','Зачеркнуть'],['|'],['h2','H<sub>2</sub>','Заголовок'],['h3','H<sub>3</sub>','Подзаголовок'],['insertUnorderedList','•≡','Список'],['insertOrderedList','1≡','Нумерованный список'],['quote','❞','Цитата'],['rule','☑','Правило'],['|'],['c:#c6f366','<i class="sybc" style="background:#c6f366"></i>','Зелёный'],['c:#f59e0b','<i class="sybc" style="background:#f59e0b"></i>','Жёлтый'],['c:#fb7185','<i class="sybc" style="background:#fb7185"></i>','Красный'],['c:#60a5fa','<i class="sybc" style="background:#60a5fa"></i>','Синий'],['removeFormat','<span style="font-size:12px">Tx</span>','Очистить формат']];
+function syBubCmd(c){const e=$('#sysed');if(!e)return;if(c.startsWith('c:')){e.focus();document.execCommand('styleWithCSS',false,false);document.execCommand('foreColor',false,c.slice(2));sysIn()}else sysCmd(c);setTimeout(syBub,0)}
+function syBub(){let b=$('#sybub');const e=$('#sysed'),s=getSelection();const hide=()=>{if(b)b.classList.remove('on')};
+ if(!e||!s||!s.rangeCount||s.isCollapsed||!e.contains(s.anchorNode)||!e.contains(s.focusNode)||!s.toString().trim())return hide();
+ if(!b){b=document.createElement('div');b.id='sybub';b.innerHTML=SYBI.map(t=>t[0]==='|'?`<span class='sybs'></span>`:`<button type='button' aria-label='${t[2]}' title='${t[2]}' onmousedown='event.preventDefault()' onclick='syBubCmd("${t[0]}")'>${t[1]}</button>`).join('');document.body.appendChild(b)}
+ const r=s.getRangeAt(0).getBoundingClientRect();if(!r.width&&!r.height)return hide();b.classList.add('on');const bw=b.offsetWidth,bh=b.offsetHeight,vw=window.innerWidth;let top=r.top-bh-10;if(top<8)top=r.bottom+10;let left=r.left+r.width/2-bw/2;left=Math.max(8,Math.min(vw-bw-8,left));b.style.top=top+'px';b.style.left=left+'px'}
+document.addEventListener('selectionchange',()=>{clearTimeout(window._sybt);window._sybt=setTimeout(syBub,60)});
+window.addEventListener('scroll',()=>{const b=$('#sybub');if(b&&b.classList.contains('on'))syBub()},true);
+/* импорт: раскладка по подгруппам */
+{const _n=niRun;niRun=async function(){const o=NI.data;await _n();try{if(!o)return;const y=SY();let base=Date.now()+7;y.fold=y.fold||{};
+ for(const g of o.groups){const G=y.groups.find(x=>x.name===g.name&&!x.pid);if(!G)continue;
+  for(const d of g.docs){const sec=(d.sec||'').trim();if(!sec||sec==='Untitled')continue;let SG=y.groups.find(x=>x.pid===G.id&&x.name===sec);if(!SG){SG={id:base++,name:sec,pid:G.id};y.groups.push(SG);y.fold[SG.id]=true}const D=y.docs.find(x=>x.nid===d.nid);if(D&&(D.gid===G.id||!D.gid))D.gid=SG.id}}
+ y.docs.forEach(x=>{if(x.nid)x.gv=0});save();R()}catch(e){console.warn(e)}}}
+
+{const _R=R;R=function(){const b=document.getElementById('sybub');if(b)b.classList.remove('on');const t=document.getElementById('sygt');if(t)t.style.display='none';_R()}}
 </script></body></html>
