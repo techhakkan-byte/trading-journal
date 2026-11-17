@@ -1394,6 +1394,29 @@ button[data-pd]{-webkit-touch-callout:none;user-select:none}
 #sybub.on{display:flex}#sybub button{background:none;border:0;color:#e8e8ec;min-width:30px;height:30px;padding:0 7px;border-radius:8px;font-size:13px;display:grid;place-items:center;cursor:pointer}#sybub button:hover{background:rgba(255,255,255,.12)}
 .sybs{width:1px;height:18px;background:rgba(255,255,255,.14);margin:0 3px}.sybc{display:block;width:14px;height:14px;border-radius:50%;font-style:normal}
 @media(max-width:600px){#sybub{max-width:calc(100vw - 16px);overflow-x:auto}}
+
+/* Доктрина v3 */
+#app .syed{background:transparent!important;border-color:transparent!important}
+.syed blockquote,.syrd blockquote{background:none!important;border:0!important;border-left:2px solid color-mix(in srgb,var(--p,#c6f366) 55%,transparent)!important;border-radius:0!important;margin:12px 0!important;padding:2px 0 2px 16px!important}
+.syed blockquote blockquote,.syrd blockquote blockquote{border-left-color:var(--bd)!important}
+.syrw{display:flex;flex-direction:column;gap:12px;min-width:0}.syrw>.c{margin:0!important}
+.syrh{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}.syrt{font-size:22px;font-weight:700;line-height:1.25;word-break:break-word}.syrp{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px;font-size:12px}
+.sysec .prh{margin-bottom:10px}.sypl{white-space:normal;text-align:left}
+.syrd{line-height:1.7;font-size:14px;color:color-mix(in srgb,var(--tx) 92%,transparent);word-break:break-word}.syrd p{margin:6px 0}.syrd h3{font-size:16px;margin:18px 0 6px}.syrd h3:first-child{margin-top:2px}
+.syrd hr{border:0;border-top:1px solid var(--bd);margin:12px 0}.syrd h3+hr{display:none}.syrd ul,.syrd ol{padding-left:22px;margin:6px 0}.syrd li{margin:3px 0}
+.syrd img{max-width:100%;height:auto;border-radius:10px;margin:8px 0;display:block;cursor:zoom-in;background:#fff}
+.syrd [data-g]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0;align-items:start}
+.syrd [data-g]:has(>img:nth-child(3):last-child),.syrd [data-g]:has(>img:nth-child(5)){grid-template-columns:repeat(3,minmax(0,1fr))}
+.syrd [data-g] img{width:100%;margin:0!important}
+.syrd [data-g="b"]{grid-template-columns:repeat(4,minmax(0,1fr))!important}.syrd [data-g="b"]>img:first-child{grid-column:1/-1}
+.syrd [data-g="b"]>img:not(:first-child){aspect-ratio:16/10;object-fit:cover;opacity:.62;cursor:pointer;transition:opacity .15s}.syrd [data-g="b"]>img:not(:first-child):hover{opacity:1;outline:2px solid var(--p,#c6f366)}
+.syrd div[data-r]{position:relative;padding:8px 12px 8px 36px;margin:6px 0;border:1px solid var(--bd);border-radius:10px;background:color-mix(in srgb,var(--tx) 3%,transparent)}
+.syrd div[data-r]:before{content:'';position:absolute;left:11px;top:10px;width:15px;height:15px;border-radius:5px;border:1.5px solid var(--mu);cursor:pointer}
+.syrd div[data-r][data-ok]:before{background:var(--g);border-color:var(--g)}.syrd div[data-r][data-ok]:after{content:'✓';position:absolute;left:14px;top:8px;color:#fff;font-size:11px;font-weight:700;pointer-events:none}.syrd div[data-r][data-ok]{color:var(--mu)}
+.syrd table{border-collapse:collapse;width:100%;font-size:12px;margin:10px 0;display:block;overflow-x:auto}.syrd th,.syrd td{border:1px solid var(--bd);padding:5px 8px;text-align:left;vertical-align:top;white-space:nowrap}.syrd th{background:color-mix(in srgb,var(--tx) 5%,transparent);font-weight:600}
+.syimgb{display:inline-flex!important;gap:6px;align-items:center;border-radius:9px!important;padding:5px 10px!important;width:auto!important}.syimgb span{font-size:12px}
+.sydone{padding:6px 14px!important;font-size:12px!important;margin-left:8px}
+@media(max-width:600px){.syrd [data-g],.syrd [data-g]:has(>img:nth-child(3):last-child),.syrd [data-g]:has(>img:nth-child(5)){grid-template-columns:repeat(2,minmax(0,1fr))}.syrt{font-size:19px}}
 </style><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 </head><body>
 <aside id='side'><div class='sdb' data-v='dash' onclick='go(this.dataset.v)'><b>TRADING</b> Journal</div><button class='sdadd' onclick='openPos()'>+ Добавить позицию</button><div class='sdl'>АНАЛИТИКА</div><button class='sdi' data-s='dash' onclick="go('dash')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M4 15a8 8 0 1 1 16 0'/><path d='m12 15 4-4'/></svg><span>Дашборд</span></button><button class='sdi' data-s='pos' onclick="go('pos')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M4 6h16M4 12h16M4 18h10'/></svg><span>Журнал</span></button><button class='sdi' data-s='rev' onclick="go('rev')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M4 20V10M10 20V4M16 20v-7M22 20H2'/></svg><span>Перформанс</span></button><div class='sdsep'></div><div class='sdl'>ЗАПИСИ</div><button class='sdi' data-s='plans' onclick="go('plans')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><circle cx='12' cy='12' r='5'/><circle cx='12' cy='12' r='1.5'/></svg><span>Торговые планы</span></button><button class='sdi' data-s='sys' onclick="go('sys')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='m12 3 9 5-9 5-9-5z'/><path d='m3 13 9 5 9-5'/></svg><span>Торговая система</span></button><button class='sdi' data-s='notes' onclick="go('notes')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z'/><path d='M14 3v5h5M9 13h6M9 17h4'/></svg><span>Заметки</span></button><button class='sdi' data-s='errs' onclick="go('errs')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3.5 21.5 20h-19z'/><path d='M12 10v4.5M12 17.5v.01'/></svg><span>Ошибки</span></button><div class='sdsep'></div><div class='sdl'>НАСТРОЙКИ</div><button class='sdi' data-s='acc' onclick="stab='acc';go('set')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='6' width='18' height='13' rx='2'/><path d='M3 10h18M16 15h2'/></svg><span>Аккаунты</span></button><button class='sdi' data-s='set' onclick="stab=stab==='acc'?'pairs':stab;go('set')"><svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='3'/><path d='M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z'/></svg><span>Настройки</span></button><div class='sdsep'></div></aside><div class='top' data-v='dash' onclick='go(this.dataset.v)'><b>TRADING</b> Journal</div><div class="w">
@@ -3264,7 +3287,7 @@ function rvAny(k){const R2=S.reviews||{};return!!R2[k]||Object.keys(R2).some(x=>
 function rvPairSw(v){if(rvEd&&pd&&pd.rv===2){try{document.querySelectorAll('.rved').forEach(rvIn)}catch(e){}try{AS.stop();rvSave(true)}catch(e){}try{AS.reset()}catch(e){}rvPair=v;rvStart()}else{rvPair=v;R()}}
 function rvPairProg(L){if(!L.length)return'';const R2=S.reviews||{};const done=L.filter(x=>R2[rvKey+'@'+x]).length;return`<span class='rvpp2'>${L.map(x=>`<button type='button' class='${R2[rvKey+'@'+x]?'ok':''}${rvPair===x?' on':''}' data-p='${E(x)}' onclick='rvPairSw(this.dataset.p)' title='${R2[rvKey+'@'+x]?'Разбор есть':'Разбора нет'}'>${R2[rvKey+'@'+x]?'✓':'○'} ${E(x)}</button>`).join('')}<em>${done}/${L.length}</em></span>`}
 
-// ===== Daily plans analytics in period review (v222)
+// ===== Daily plans analytics in period review (v224)
 var rvPU='w',rvDO=null;
 function rvPUseg(){return`<span class='rvseg rvpu'><button type='button' class='${rvPU==='w'?'on':''}' onclick='rvPU="w";rvKeep()'>Недельные</button><button type='button' class='${rvPU==='d'?'on':''}' onclick='rvPU="d";rvKeep()'>Дневные</button></span>`}
 function rvDTr(x,d,C){return C.filter(q=>q.date===d&&((q.planRef&&q.planRef.pid===x.id&&(!q.planRef.day||q.planRef.day===d))||(!q.planRef&&q.pair===x.pair)))}
@@ -3310,8 +3333,8 @@ async function niRun(){if(NI.busy)return;NI.busy=true;const o=NI.data,keys=Objec
   sysTab='doc';if(view!=='sys')go('sys');else R()}
  catch(e){NI.busy=false;niBox(`<b>Импорт прерван</b><div class='sm' style='margin:10px 0 14px'>${E(String(e&&e.message||e))}</div><div style='display:flex;justify-content:flex-end'><button class='nb' onclick='niClose()'>Закрыть</button></div>`)}}
 /* Доктрина: каждый документ — отдельная запись в облаке (большие документы не помещались в одну запись) */
-{const _r=clRows;clRows=function(src){const o=_r(src);const y=o.sys;if(y&&typeof y==='object'&&Array.isArray(y.docs)){const docs=y.docs;o.sys={...y};delete o.sys.docs;CL.coll.add('sysdoc');o['sysdoc#__order']=docs.map(x=>String(x.id));docs.forEach(x=>{o['sysdoc#'+x.id]=x})}return o}}
-{const _b=clBuild;clBuild=function(M){const R2=_b(M);if(Array.isArray(R2.sysdoc)){R2.sys=R2.sys&&typeof R2.sys==='object'?R2.sys:{};if(R2.sysdoc.length||!Array.isArray(R2.sys.docs))R2.sys.docs=R2.sysdoc;delete R2.sysdoc}return R2}}
+{const _r=clRows;clRows=function(src){const o=_r(src);const y=o.sys;if(y&&typeof y==='object'){o.sys={...y};if(Array.isArray(y.docs)){const docs=y.docs;delete o.sys.docs;CL.coll.add('sysdoc');o['sysdoc#__order']=docs.map(x=>String(x.id));docs.forEach(x=>{o['sysdoc#'+x.id]=x})}if(Array.isArray(y.groups)){const gs=y.groups;delete o.sys.groups;CL.coll.add('sysgrp');o['sysgrp#__order']=gs.map(x=>String(x.id));gs.forEach(x=>{o['sysgrp#'+x.id]=x})}}return o}}
+{const _b=clBuild;clBuild=function(M){const R2=_b(M);for(const[k,f]of[['sysdoc','docs'],['sysgrp','groups']]){if(Array.isArray(R2[k])){R2.sys=R2.sys&&typeof R2.sys==='object'?R2.sys:{};if(R2[k].length||!Array.isArray(R2.sys[f]))R2.sys[f]=R2[k];delete R2[k]}}return R2}}
 
 /* ===== Доктрина v2: подгруппы, галереи скринов, лайтбокс, плавающая панель форматирования ===== */
 var SYREN=null;
@@ -3377,4 +3400,42 @@ window.addEventListener('scroll',()=>{const b=$('#sybub');if(b&&b.classList.cont
  y.docs.forEach(x=>{if(x.nid)x.gv=0});save();R()}catch(e){console.warn(e)}}}
 
 {const _R=R;R=function(){const b=document.getElementById('sybub');if(b)b.classList.remove('on');const t=document.getElementById('sygt');if(t)t.style.display='none';_R()}}
+
+/* ===== Доктрина v3: режим чтения как в торговом плане + кнопка «Редактировать» + добавление скринов ===== */
+var sysEd=false,syRng=null;
+function syPath(gid){const y=SY();return syAnc(gid).reverse().map(id=>(y.groups.find(g=>g.id===id)||{}).name).filter(Boolean)}
+function sySetEd(v){sysEd=!!v;const st=document.getElementById('sybub');if(st)st.classList.remove('on');R();if(v)setTimeout(()=>{const e=$('#sysed');if(e)e.focus()},60)}
+{const _a=sysAddDoc;sysAddDoc=function(g){sysEd=true;_a(g)}}
+function syReadHtml(d){if(!d.gv){const r=syGrp(d.html||'');d.gv=1;if(r.ch){d.html=sanitIt(r.html);setTimeout(save,0)}}const t=document.createElement('template');t.innerHTML=sanitIt(d.html||'');let ri=0,gi=0;t.content.querySelectorAll('[data-r]').forEach(n=>n.setAttribute('data-ri',ri++));t.content.querySelectorAll('[data-g]').forEach(n=>n.setAttribute('data-gi',gi++));
+ const secs=[];let cur={t:'',n:[]};[...t.content.childNodes].forEach(n=>{if(n.nodeType===1&&n.tagName==='H2'){if(cur.t||cur.n.some(x=>x.nodeType===1||(x.textContent||'').trim()))secs.push(cur);cur={t:n.textContent.trim(),n:[]}}else cur.n.push(n)});if(cur.t||cur.n.some(x=>x.nodeType===1||(x.textContent||'').trim()))secs.push(cur);
+ const box=document.createElement('div');return secs.map(s=>{box.innerHTML='';s.n.forEach(n=>box.appendChild(n));const body=box.innerHTML.trim();if(!s.t&&!txtOf(body)&&body.indexOf('<img')<0)return'';return`<div class='c in prb sysec'>${s.t?`<div class='prh'><span class='prl sypl'>${E(s.t)}</span></div>`:''}<div class='syrd'>${body}</div></div>`}).join('')}
+function sysReadView(d){const path=syPath(d.gid);
+ return`<div class='syrw'><div class='c in syrh'><span class='syic'>${SYI.doc}</span><div style='flex:1;min-width:0'><div class='syrt'>${E(d.title||'Без названия')}</div><div class='syrp'>${path.length?path.map(p=>`<span class='prp'>${E(p)}</span>`).join('<span class="mu">›</span>'):'<span class="sm">Без группы</span>'}</div></div><button class='nb phx' onclick='sySetEd(1)'>${IC.pen} Редактировать</button></div>
+${syReadHtml(d)||`<div class='c in ple'><b>Документ пустой</b><div class='sm' style='margin-top:8px'>Нажми «Редактировать», чтобы добавить текст и скрины.</div></div>`}</div>`}
+{const _d=sysDoc;sysDoc=function(){let h=_d();const d=sysCur();if(!d)return h;if(!txtOf(d.html||'')&&(d.html||'').indexOf('<img')<0&&!sysEd)sysEd=true;
+ const a=h.indexOf("<div class='c in sydoc'>"),b=h.indexOf("<div class='c in sydocs'>");if(a<0||b<0)return h;
+ if(!sysEd)return h.slice(0,a)+sysReadView(d)+h.slice(b);
+ let left=h.slice(a,b);
+ left=left.replace(/(<div class='ntb sytb'>[\s\S]*?)(<span style='flex:1'><\/span>)/,(m,x,y)=>x+`<button type='button' class='sib syimgb' aria-label='Добавить скрин' title='Добавить скрин (или вставь Ctrl+V / перетащи)' onmousedown='event.preventDefault()' onclick='syImgPick()'>${IMG}<span>Скрин</span></button>`+y);
+ left=left.replace(/<span class='sm' id='syst'([^>]*)>([^<]*)<\/span>/,(m,x,y)=>`<span class='sm' id='syst'${x}>${y}</span><button type='button' class='nb sydone' onclick='sySetEd(0)'>✓ Готово</button>`);
+ return h.slice(0,a)+left+h.slice(b)}}
+/* скрины в редакторе */
+document.addEventListener('selectionchange',()=>{const e=$('#sysed'),s=getSelection();if(e&&s&&s.rangeCount&&e.contains(s.anchorNode))syRng=s.getRangeAt(0).cloneRange()});
+function syImgPick(){const i=document.createElement('input');i.type='file';i.accept='image/*';i.multiple=true;i.onchange=()=>syImgAdd(i.files);i.click()}
+async function syImgAdd(fs){const e=$('#sysed');if(!e)return;const L=[];for(const f of [...(fs||[])]){if(!f.type||!f.type.startsWith('image/'))continue;if(f.size>10*1024*1024){toast('Файл больше 10 МБ');continue}const u=await shrink(f);if(u)L.push(u)}if(!L.length)return;
+ e.focus();const s=getSelection();if(syRng&&e.contains(syRng.startContainer)){s.removeAllRanges();s.addRange(syRng)}else{const r=document.createRange();r.selectNodeContents(e);r.collapse(false);s.removeAllRanges();s.addRange(r)}
+ document.execCommand('insertHTML',false,L.map(u=>`<p><img src="${u}"></p>`).join('')+'<p><br></p>');const g=syGrp(e.innerHTML);if(g.ch)e.innerHTML=sanitIt(g.html);sysIn();toast(L.length>1?`Добавлено скринов: ${L.length}`:'Скрин добавлен')}
+document.addEventListener('paste',ev=>{const e=$('#sysed');if(!e||!e.contains(ev.target))return;const fs=[...(ev.clipboardData&&ev.clipboardData.files||[])].filter(f=>f.type.startsWith('image/'));if(!fs.length)return;ev.preventDefault();syImgAdd(fs)},true);
+document.addEventListener('drop',ev=>{const e=$('#sysed');if(!e||!e.contains(ev.target))return;const fs=[...(ev.dataTransfer&&ev.dataTransfer.files||[])].filter(f=>f.type.startsWith('image/'));if(!fs.length)return;ev.preventDefault();if(document.caretRangeFromPoint){const r=document.caretRangeFromPoint(ev.clientX,ev.clientY);if(r)syRng=r}syImgAdd(fs)},true);
+/* режим чтения: правила, галереи, лайтбокс */
+function syMut(fn){const d=sysCur();if(!d)return;const t=document.createElement('template');t.innerHTML=sanitIt(d.html||'');fn(t.content);d.html=sanitIt(t.innerHTML);d.upd=Date.now();save();R()}
+document.addEventListener('click',ev=>{const tg=ev.target;if(!tg||!tg.closest)return;const rd=tg.closest('.syrd');if(!rd)return;
+ const r=tg.closest('[data-ri]');if(r&&ev.clientX-r.getBoundingClientRect().left<30){const i=+r.dataset.ri;syMut(c=>{const n=c.querySelectorAll('[data-r]')[i];if(n){if(n.hasAttribute('data-ok'))n.removeAttribute('data-ok');else n.setAttribute('data-ok','1')}});return}
+ const im=tg.closest('img');if(!im)return;const g=im.closest('[data-g]');
+ if(g&&g.getAttribute('data-g')==='b'&&g.querySelector('img')!==im){const gi=+g.dataset.gi,k=[...g.querySelectorAll('img')].indexOf(im);syMut(c=>{const G=c.querySelectorAll('[data-g]')[gi];if(G){const L=G.querySelectorAll('img');if(L[k])G.insertBefore(L[k],G.firstChild)}});return}
+ const list=g?[...g.querySelectorAll('img')]:[im];lbOpen(list.map(x=>x.src),Math.max(0,list.indexOf(im)))});
+document.addEventListener('mouseover',ev=>{const tg=ev.target;if(!tg||!tg.closest||tg.closest('#sygt'))return;const g=tg.closest('.syrd [data-g]');if(g&&g.querySelectorAll('img').length>1)syGtPos(g)});
+{const _set=syGtSet;syGtSet=function(v){const t=$('#sygt'),g=t&&t._g;if(g&&g.closest('.syrd')){const gi=+g.dataset.gi;t.style.display='none';syMut(c=>{const G=c.querySelectorAll('[data-g]')[gi];if(G)G.setAttribute('data-g',v)});return}_set(v)}}
+/* при переходе к другому документу — снова режим чтения */
+{const _R=R;let last=null;R=function(){const y=S.sys,c=y&&y.cur;if(c!==last){if(last!==null){const d=y&&y.docs&&y.docs.find(x=>x.id===c);sysEd=!!(d&&!txtOf(d.html||'')&&(d.html||'').indexOf('<img')<0)}last=c}_R()}}
 </script></body></html>
