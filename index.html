@@ -1887,7 +1887,7 @@ async function groqTx(blob,key){const v=V(),fd=new FormData(),ext=blob.type.incl
  if(!r.ok){let m='';try{m=(await r.json()).error.message}catch(e){}throw new Error(r.status===401?'Groq не принял ключ API. Проверь его в Настройки → Голос':r.status===429?'Превышен лимит Groq, попробуй через минуту':'Ошибка Groq '+r.status+(m?': '+m:''))}
  return((await r.json()).text||'').trim()}
 const BASEV=['Daily','Weekly','4h','1h','15m','FVG','DR','RB','IDM','SNR','BOS','CHoCH','Bullish','Bearish','Discount','Premium','Fractal High','Fractal Low','ребаланс','ликвидность','импульс','коррекция','сценарий'];
-function vPrompt(){const t=[...new Set([...S.pairs,...S.setups,...S.tfs,...(S.dict||[]).map(d=>d.t),...BASEV])];let out='Разбор рынка трейдера на русском с английскими терминами: ';for(const x of t){if((out+x).length>700)break;out+=x+', '}return out.replace(/, $/,'.')}
+function vPrompt(){const t=[...new Set([...(S.dict||[]).map(d=>d.t),...BASEV,...S.pairs,...S.tfs,...S.setups].filter(x=>x&&String(x).length<=40))];const B=x=>new TextEncoder().encode(x).length;let out='Разбор рынка трейдера на русском с английскими терминами: ';for(const x of t){if(B(out+x+', ')>820)continue;out+=x+', '}return out.replace(/, $/,'.')}
 function esc(x){return x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
 function applyDict(t){const D=[...(S.dict||[])].sort((a,b)=>b.f.length-a.f.length);for(const d of D){try{t=t.replace(new RegExp('(^|[^\\p{L}\\p{N}])'+esc(d.f)+'(?=$|[^\\p{L}\\p{N}])','giu'),(m,a)=>a+d.t)}catch(e){}}return t}
 function addDict(f,t,manual){const D=S.dict=S.dict||[],k=D.findIndex(d=>d.f.toLowerCase()===f.toLowerCase());if(k>=0){D[k].t=t;D[k].n=(D[k].n||1)+1}else D.push({f,t,n:1,m:!!manual});save()}
