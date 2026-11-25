@@ -4816,4 +4816,10 @@ function ntDocBlock(dc){let y;try{y=SY()}catch(e){y={groups:[]}}const order=(y.g
 
 // safety net: the note view must never show less text than the note has
 {const _R=R;R=function(){_R();if(view!=='notev')return;const n=(S.notes||[]).find(x=>x.id===nid),v=document.querySelector('.ntvm');if(!n||!v)return;const want=ngTxt(sanit(n.html)).length,got=ngTxt(v.innerHTML).length;if(got<want){console.warn('note view lost text',got,want);v.innerHTML=sanit(n.html)}}}
+
+// «+ Создать заметку ▾» menu: float above everything (fixed, in body) so cards can't cover it
+function ntNMPos(){document.querySelectorAll('body>.ntnm').forEach(x=>x.remove());if(!ntNM||view!=='notes')return;const m=document.querySelector('.ntnew .ntnm'),b=document.querySelector('.ntnew .nb');if(!m||!b)return;document.body.appendChild(m);const r=b.getBoundingClientRect();Object.assign(m.style,{position:'fixed',zIndex:'120',top:(r.bottom+6)+'px',right:'auto',left:Math.max(8,Math.min(innerWidth-m.offsetWidth-8,r.right-m.offsetWidth))+'px'})}
+{const _R=R;R=function(){_R();ntNMPos()}}
+addEventListener('scroll',()=>{if(ntNM){ntNM=false;document.querySelectorAll('body>.ntnm').forEach(x=>x.remove())}},true);
+{const _k=ntNewK;ntNewK=function(k){document.querySelectorAll('body>.ntnm').forEach(x=>x.remove());_k(k)}}
 </script></body></html>
